@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Обратная связь — Alprim</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="index.html" aria-label="Alprim">
+      <img src="assets/img/logo.svg" alt="Логотип Alprim" width="28" height="28"/>
+      <span>Alprim</span>
+    </a>
+    <nav class="nav" style="margin-left:auto"><a href="index.html" class="">Главная</a>
+        <a href="services.html" class="">Услуги</a>
+        <a href="clients.html" class="">Наши клиенты</a>
+        <a href="news.html" class="">Новости</a>
+        <a href="contact.html" class="active">Обратная связь</a></nav>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Связаться с нами</h2>
+      <p class="muted">Оставьте заявку — мы перезвоним и ответим на вопросы.</p>
+      <form action="mailto:info@alprim.example" method="post" enctype="text/plain">
+        <div class="row">
+          <div><label>Имя<br/><input required name="name" placeholder="Ваше имя"></label></div>
+          <div><label>Телефон<br/><input name="phone" placeholder="+7 ..."></label></div>
+        </div>
+        <div class="row">
+          <div><label>Email<br/><input type="email" name="email" placeholder="you@example.com"></label></div>
+          <div><label>Тема<br/><input name="subject" placeholder="Вопрос/заявка"></label></div>
+        </div>
+        <div><label>Сообщение<br/><textarea name="message" rows="6" placeholder="Опишите задачу"></textarea></label></div>
+        <div style="display:flex;gap:12px;margin-top:12px">
+          <button class="button primary" type="submit">Отправить</button>
+          <a class="button" href="mailto:info@alprim.example">Написать на email</a>
+        </div>
+      </form>
+      <p class="notice" style="margin-top:12px"><strong>Примечание:</strong> форма отправляет письмо через почтовый клиент. Для серверной отправки можно подключить Formspree, FormSubmit или собственный обработчик.</p>
+    </section>
+  </main>
+  
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="logo"><img src="assets/img/logo.svg" width="24" height="24" alt=""/> Alprim</div>
+        <small class="muted">Инженерные решения: электромонтаж, сигнализация, освещение.</small>
+      </div>
+      <div>
+        <div><small class="muted">Контакты</small></div>
+        <div>Email: <a href="mailto:info@alprim.example">info@alprim.example</a></div>
+        <div>Моб.: <a href="tel:+79990000000">+7 (999) 000-00-00</a></div>
+      </div>
+    </div>
+    <div style="margin-top:14px"><small class="muted">© <span id="year"></span> Alprim. Все права защищены.</small></div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
